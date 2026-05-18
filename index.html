@@ -1,287 +1,291 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
-    <!-- Tailwind CSS for styling -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background: #111827;
-            color: #ffffff; /* white for all text */
-        }
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #fdfdfd;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #f2f2f2;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #ffffff;
-        }
-        .nav-link.active {
-            color: #ffffff; /* white for active nav links */
-        }
-        /* Header and sidebar backgrounds */
-        .bg-gray-50 {
-            background-color: #ffffff !important;
-        }
-        /* Card backgrounds */
-        .bg-white {
-            background-color: #ffffff !important;
-        }
-        /* Headings */
-        h1, h2, h3, h4, h5, h6, .text-gray-900 {
-            color: #ffffff !important; /* white for headings */
-        }
-        /* Paragraphs and normal text */
-        p, .text-gray-800, .prose p, .prose-lg p, .prose li, .prose ul, .prose ol {
-            color: #ffffff !important; /* white for paragraphs */
-        }
-        /* Muted text */
-        .text-gray-600, .prose .text-gray-600 {
-            color: #d1d5db !important; /* light gray for muted text */
-        }
-        /* Links */
-        a, .text-blue-500 {
-            color: #60a5fa !important; /* blue for links */
-        }
-        a:hover {
-            color: #3b82f6 !important;
-        }
-        /* Border colors */
-        .border-gray-200 {
-            border-color: #374151 !important;
-        }
-        .border-gray-300 {
-            border-color: #4b5563 !important;
-        }
-        /* Card backgrounds for portfolio */
-        .bg-gray-50 {
-            background-color: #1f2937 !important;
-        }
-        /* Skill tags */
-        .bg-blue-100 { background-color: #1e293b !important; }
-        .text-blue-800 { color: #60a5fa !important; }
-        .bg-green-100 { background-color: #064e3b !important; }
-        .text-green-800 { color: #6ee7b7 !important; }
-        .bg-yellow-100 { background-color: #78350f !important; }
-        .text-yellow-800 { color: #fde68a !important; }
-        .bg-indigo-100 { background-color: #312e81 !important; }
-        .text-indigo-800 { color: #a5b4fc !important; }
-    </style>
-    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-</head>
-<body class="transition-colors duration-300">
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <!-- Header / Navigation -->
-        <header class="flex justify-between items-center py-6 border-b border-gray-200">
-            <div class="text-2xl font-bold text-gray-900">
-                <a href="#" class="nav-link" data-tab="home">My Personal Website</a>
-            </div>
-            <nav class="hidden md:flex items-center space-x-6 text-lg">
-                <a href="#" class="nav-link hover:text-blue-500" data-tab="portfolio">Portfolio</a>
-                <a href="#" class="nav-link hover:text-blue-500" data-tab="blog">Blog Posts</a>
-                <a href="#" class="nav-link hover:text-blue-500" data-tab="cv">CV</a>
-                
-            </nav>
-        </header>
-
-        <!-- Main Content -->
-        <main class="py-12">
-            <!-- Home Section -->
-            <div id="home" class="tab-content">
-                <div class="flex flex-col lg:flex-row-reverse gap-12">
-                    <aside class="lg:w-1/3 flex-shrink-0">
-                        <!-- Sidebar Content -->
-                        <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-2xl sticky top-12">
-                            <img class="w-48 h-48 rounded-full mb-4 object-cover shadow-lg" src="https://placehold.co/200x200/374151/E5E7EB?text=You" alt="Your Name" onerror="this.onerror=null;this.src='https://placehold.co/200x200/374151/E5E7EB?text=You';">
-                            <h2 class="text-3xl font-bold text-gray-900">Daniel Willson V</h2>
-                            <p class="mt-2 text-gray-600">Computer Science Student | Machine Learning & AI Enthusiast | Learning Software Developer
-                                Passionate about building intelligent systems and experimenting with data to solve real-world problems.</p>
-                            <ul class="mt-6 space-y-3 text-left w-full">
-                                <li class="flex items-center">
-                                    <svg class="w-5 h-5 mr-3 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
-                                    </svg>
-                                    <span>Alliance University</span>
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-5 h-5 mr-3 text-gray-500" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
-                                    </svg>
-                                    <a href="mailto:danielwillson004@gmail.com" class="hover:text-blue-500">My Email</a>
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-5 h-5 mr-3 text-gray-500" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.565 21.8 24 17.302 24 12c0-6.627-5.373-12-12-12z"></path>
-                                    </svg>
-                                    <a href="https://github.com/DanielWill-1" class="hover:text-blue-500">GitHub</a>
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-5 h-5 mr-3 text-gray-500" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.25c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.25h-3v-5.5c0-1.378-1.122-2.5-2.5-2.5s-2.5 1.122-2.5 2.5v5.5h-3v-10h3v1.528c.878-.977 2.166-1.528 3.5-1.528 2.481 0 4.5 2.019 4.5 4.5v5.5z"></path>
-                                    </svg>
-                                    <a href="#" class="hover:text-blue-500">LinkedIn</a>
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-5 h-5 mr-3 text-gray-500" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.723-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-2.717 0-4.92 2.203-4.92 4.917 0 .386.044.762.127 1.124-4.087-.205-7.713-2.164-10.141-5.144-.423.725-.666 1.562-.666 2.457 0 1.694.863 3.188 2.173 4.065-.802-.026-1.555-.246-2.213-.616v.062c0 2.366 1.684 4.342 3.918 4.788-.41.111-.843.171-1.287.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.6 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.396 0-.788-.023-1.175-.068 2.179 1.397 4.768 2.212 7.548 2.212 9.051 0 13.998-7.496 13.998-13.986 0-.213-.005-.425-.014-.637.961-.695 1.8-1.562 2.462-2.549z"></path>
-                                    </svg>
-                                    <a href="#" class="hover:text-blue-500">Twitter</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </aside>
-                    <div class="lg:w-2/3">
-                        <article class="prose prose-lg max-w-none">
-                            <!-- Personal Website Area -->
-                            <h1 id="-hi-i-m-daniel-willson"> Hi, I'm Daniel Willson</h1>
-                            <p>Welcome to my personal space on the web!<br>I'm a Computer Science student passionate about Machine Learning, Artificial Intelligence, and Software Development.<br>I love experimenting with LLMs, Computer Vision, and Bayesian Networks, and I enjoy turning ideas into scalable applications that solve real-world problems.  </p>
-                            <p>Currently, I'm focused on:  </p>
-                            <ul>
-                                <li>Building intelligent ML pipelines  </li>
-                                <li>Exploring Deep Learning &amp; Reinforcement Learning  </li>
-                                <li>Developing scalable AI-driven applications with Python, PyTorch &amp; TensorFlow  </li>
-                            </ul>
-                            <p> Take a look around to explore my projects and journey in tech. Let’s build something amazing together!  </p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Portfolio Section -->
-            <div id="portfolio" class="tab-content hidden">
-                <article class="prose prose-lg max-w-none">
-                    <h1 class="mb-8">Portfolio</h1>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <!-- Project 1 -->
-                        <div class="bg-gray-50 rounded-2xl p-6 transform hover:scale-105 transition-transform duration-300">
-                            <img src="https://placehold.co/600x400/6366f1/E5E7EB?text=Project+1" class="rounded-lg mb-4" alt="Project 1 Thumbnail">
-                            <h3 class="text-xl font-bold">Project Title One</h3>
-                            <p class="mt-2">A brief description of the project, its purpose, and the technologies used.</p>
-                            <div class="mt-4 flex space-x-4">
-                                <a href="#" class="text-blue-500 hover:underline">Live Demo</a>
-                                <a href="#" class="text-blue-500 hover:underline">Source Code</a>
-                            </div>
-                        </div>
-                        <!-- Project 2 -->
-                        <div class="bg-gray-50 rounded-2xl p-6 transform hover:scale-105 transition-transform duration-300">
-                            <img src="https://placehold.co/600x400/ec4899/E5E7EB?text=Project+2" class="rounded-lg mb-4" alt="Project 2 Thumbnail">
-                            <h3 class="text-xl font-bold">Project Title Two</h3>
-                            <p class="mt-2">A brief description of the project, its purpose, and the technologies used.</p>
-                            <div class="mt-4 flex space-x-4">
-                                <a href="#" class="text-blue-500 hover:underline">Live Demo</a>
-                                <a href="#" class="text-blue-500 hover:underline">Source Code</a>
-                            </div>
-                        </div>
-                        <!-- Add more projects as needed -->
-                    </div>
-                </article>
-            </div>
-
-            <!-- Blog Posts Section -->
-            <div id="blog" class="tab-content hidden">
-                <article class="prose prose-lg max-w-none">
-                    <h1 class="mb-8">Blog Posts</h1>
-                    <div class="space-y-12">
-                        <!-- Blog Post 1 -->
-                        <div class="border-l-4 border-blue-500 pl-6">
-                            <h2 class="!mt-0">My First Blog Post</h2>
-                            <p class="!text-base !text-gray-500">Published on August 20, 2025</p>
-                            <p>This is an excerpt of my first blog post. I talk about exciting new developments in my field of study and what they could mean for the future. It's a fascinating read for anyone interested in the topic.</p>
-                            <a href="blog-post-1.html" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline no-underline font-semibold">Read more &rarr;</a>
-                        </div>
-                        <!-- Blog Post 2 -->
-                        <div class="border-l-4 border-blue-500 pl-6">
-                            <h2 class="!mt-0">A Deep Dive into a Complex Topic</h2>
-                            <p class="!text-base !text-gray-500">Published on July 15, 2025</p>
-                            <p>In this post, I explore a more complex subject, breaking it down into understandable parts. We'll look at the history, the current state, and future possibilities. Perfect for both beginners and experts.</p>
-                            <a href="blog-post-2.html" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline no-underline font-semibold">Read more &rarr;</a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-
-            <!-- CV Section -->
-            <div id="cv" class="tab-content hidden">
-                 <article class="prose prose-lg max-w-none">
-                    <h1 class="mb-8">Curriculum Vitae</h1>
-                    <!-- Education Section -->
-                    <section>
-                        <h2 class="border-b border-gray-300 pb-2">Education</h2>
-                         <div class="mt-4">
-                            <h3 class="!mt-0">BTech in Computer Science and Engineering</h3>
-                            <p class="!my-0">Alliance University | 2022-2026</p>
-                        </div>
-                    </section>
-                    <!-- Experience Section 
-                    <section class="mt-12">
-                        <h2 class="border-b border-gray-300 pb-2">Work Experience</h2>
-                        <div class="mt-4">
-                            <h3 class="!mt-0">Senior Research Fellow</h3>
-                            <p class="!my-0">Future Tech Inc. | 2024 - Present</p>
-                            <ul class="!mt-2">
-                                <li>Leading research initiatives in machine learning.</li>
-                                <li>Publishing findings in top-tier academic journals.</li>
-                            </ul>
-                        </div>
-                    </section>
-                     -->
-                    <!-- Skills Section  TODO: Add skills-->
-                    <section class="mt-12">
-                        <h2 class="border-b border-gray-300 pb-2">Skills</h2>
-                        <div class="flex flex-wrap gap-2 mt-4">
-                            <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded">JavaScript</span>
-                            <span class="bg-green-100 text-green-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded">Python</span>
-                            <span class="bg-yellow-100 text-yellow-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded">Data Analysis</span>
-                             <span class="bg-indigo-100 text-indigo-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded">Machine Learning</span>
-                        </div>
-                    </section>
-                </article>
-            </div>
-        </main>
-    </div>
-
-    <!-- JavaScript for Tab Switching ONLY -->
-    <script>
-        const navLinks = document.querySelectorAll('.nav-link');
-        const tabContents = document.querySelectorAll('.tab-content');
-        function switchTab(tabId) {
-            tabContents.forEach(content => {
-                content.classList.add('hidden');
-            });
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-            });
-            const activeTab = document.getElementById(tabId);
-            if (activeTab) {
-                activeTab.classList.remove('hidden');
-            }
-            const activeLink = document.querySelector(`.nav-link[data-tab="${tabId}"]`);
-            if (activeLink) {
-                activeLink.classList.add('active');
-            }
+<html class="dark scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Daniel Willson Velladurai - AI Researcher &amp; Research Engineer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed": "#d9e2ff",
+                        "on-secondary": "#3c0091",
+                        "secondary-fixed": "#e9ddff",
+                        "outline": "#8c909f",
+                        "primary": "#afc6ff",
+                        "inverse-surface": "#e0e2ea",
+                        "on-primary-fixed": "#001a43",
+                        "on-tertiary-container": "#002e3e",
+                        "tertiary-container": "#3e9ac1",
+                        "surface-tint": "#afc6ff",
+                        "surface-container-low": "#181c21",
+                        "background": "#0B0F14",
+                        "on-error-container": "#ffdad6",
+                        "surface-container-lowest": "#0a0e13",
+                        "inverse-primary": "#0059c6",
+                        "error-container": "#93000a",
+                        "secondary-fixed-dim": "#d0bcff",
+                        "primary-fixed-dim": "#afc6ff",
+                        "error": "#ffb4ab",
+                        "on-tertiary-fixed-variant": "#004d66",
+                        "on-error": "#690005",
+                        "on-secondary-fixed-variant": "#5516be",
+                        "secondary": "#d0bcff",
+                        "on-surface": "#e0e2ea",
+                        "surface-container-highest": "#31353b",
+                        "on-primary": "#002d6c",
+                        "surface-container": "#1c2025",
+                        "surface": "#0B0F14",
+                        "on-secondary-container": "#c4abff",
+                        "surface-bright": "#36393f",
+                        "primary-container": "#528dff",
+                        "surface-container-high": "#262a30",
+                        "on-primary-fixed-variant": "#004398",
+                        "on-secondary-fixed": "#23005c",
+                        "on-background": "#e0e2ea",
+                        "tertiary": "#7bd1fa",
+                        "on-tertiary-fixed": "#001e2b",
+                        "tertiary-fixed": "#c0e8ff",
+                        "outline-variant": "#424753",
+                        "surface-dim": "#0B0F14",
+                        "on-tertiary": "#003547",
+                        "surface-variant": "#151B23",
+                        "secondary-container": "#571bc1",
+                        "tertiary-fixed-dim": "#7bd1fa",
+                        "on-primary-container": "#00275f",
+                        "inverse-on-surface": "#2d3136",
+                        "on-surface-variant": "#a3a8b8"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1000px",
+                        "gutter": "24px",
+                        "section-gap-desktop": "120px",
+                        "section-gap-mobile": "64px",
+                        "margin-mobile": "20px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "mono": ["monospace"],
+                        "headline-md": ["Space Grotesk", "sans-serif"],
+                        "body-lg": ["Inter", "sans-serif"],
+                        "body-sm": ["Inter", "sans-serif"],
+                        "body-md": ["Inter", "sans-serif"],
+                        "display-lg-mobile": ["Space Grotesk", "sans-serif"],
+                        "headline-lg": ["Space Grotesk", "sans-serif"],
+                        "display-lg": ["Space Grotesk", "sans-serif"],
+                        "label-md": ["Inter", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "mono": ["14px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-sm": ["14px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg-mobile": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600" }]
+                    }
+                },
+            },
         }
-        navLinks.forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                const tabId = this.getAttribute('data-tab');
-                switchTab(tabId);
-            });
-        });
-        switchTab('home');
     </script>
-</body>
-</html>
+<style>
+        .custom-card-bg { background-color: #151B23; }
+        .custom-card-border { border: 1px solid rgba(255,255,255,0.08); }
+        .custom-card-radius { border-radius: 12px; }
+        
+        .custom-button-primary { 
+            background-color: #E0E2EA; 
+            color: #0B0F14; 
+            border: 1px solid transparent;
+            transition: all 0.3s ease;
+        }
+        .custom-button-primary:hover {
+            background-color: #ffffff;
+            border-color: rgba(255,255,255,0.2);
+            box-shadow: 0 0 20px rgba(224,226,234,0.15);
+        }
+        
+        .custom-button-ghost { 
+            background-color: transparent; 
+            border: 1px solid rgba(255,255,255,0.15); 
+            transition: all 0.3s ease;
+        }
+        .custom-button-ghost:hover {
+            background-color: rgba(255,255,255,0.05);
+            border-color: rgba(255,255,255,0.3);
+        }
+        
+        .custom-chip-subtle { 
+            background-color: rgba(255, 255, 255, 0.03); 
+            border: 1px solid rgba(255,255,255,0.08); 
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md min-h-screen flex flex-col antialiased selection:bg-white/20 selection:text-white">
+<!-- TopNavBar -->
+<nav aria-label="Main Navigation" class="bg-background/90 backdrop-blur-md sticky top-0 w-full z-50">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-gutter py-6">
+<a class="font-headline-md text-body-lg font-bold text-on-surface hover:text-white transition-all duration-300" href="index.html">Daniel Velladurai</a>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md" href="research.html">Research</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md" href="publications.html">Publications</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md" href="blogs.html">Blog</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md" href="about.html">About</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md" href="contact.html">Contact</a>
+</div>
+<div class="hidden md:flex items-center space-x-4">
+<a class="custom-button-ghost px-5 py-2 rounded-md font-label-md text-label-md text-on-surface hover:bg-white/5 transition-colors" href="Daniel's Resume.pdf" download>CV</a>
+<a class="custom-button-primary px-5 py-2 rounded-md font-label-md text-label-md hover:bg-white transition-colors" href="contact.html">Get in Touch</a>
+</div>
+<!-- Mobile Menu Button -->
+<button class="md:hidden text-on-surface">
+        Menu
+    </button>
+</div>
+</nav>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-gutter pt-20 pb-section-gap-mobile md:pt-32 md:pb-section-gap-desktop flex flex-col items-start justify-center min-h-[60vh]">
+<div class="w-full max-w-3xl space-y-8">
+<div class="space-y-6">
+<h2 class="font-mono text-body-sm text-on-surface-variant uppercase tracking-widest">AI Researcher &amp; Research Engineer</h2>
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface tracking-tight">Daniel Willson Velladurai</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+                        Building multimodal medical AI systems for real-world healthcare applications.
+                    </p>
+</div>
+<div class="flex flex-wrap gap-3">
+<span class="custom-chip-subtle text-on-surface-variant font-mono text-mono px-3 py-1.5 rounded-md uppercase tracking-wider text-xs">Computer Vision</span>
+<span class="custom-chip-subtle text-on-surface-variant font-mono text-mono px-3 py-1.5 rounded-md uppercase tracking-wider text-xs">Medical AI</span>
+<span class="custom-chip-subtle text-on-surface-variant font-mono text-mono px-3 py-1.5 rounded-md uppercase tracking-wider text-xs">Explainable Systems</span>
+<span class="custom-chip-subtle text-on-surface-variant font-mono text-mono px-3 py-1.5 rounded-md uppercase tracking-wider text-xs">Multimodal Learning</span>
+</div>
+<div class="flex flex-wrap gap-4 pt-6">
+<a class="custom-button-primary px-6 py-3 rounded-md font-label-md text-label-md" href="#research">
+                        View Research
+                    </a>
+<a class="custom-button-ghost text-on-surface px-6 py-3 rounded-md font-label-md text-label-md" href="https://github.com">
+                        GitHub
+                    </a>
+</div>
+</div>
+</section>
+<!-- Research Focus -->
+<section class="max-w-container-max mx-auto px-gutter py-section-gap-mobile md:py-section-gap-desktop" id="research">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-12">Research Focus</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="bg-surface-container-low border border-white/5 rounded-2xl p-8 hover:border-white/10 hover:bg-surface-container transition-all duration-300 space-y-4">
+<h3 class="font-headline-md text-headline-md text-on-surface">Medical AI</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                        Developing robust, clinically viable deep learning models for disease diagnosis, prognosis, and treatment planning using multimodal healthcare data.
+                    </p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-low border border-white/5 rounded-2xl p-8 hover:border-white/10 hover:bg-surface-container transition-all duration-300 space-y-4">
+<h3 class="font-headline-md text-headline-md text-on-surface">Computer Vision</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                        Advancing state-of-the-art architectures for medical image analysis, focusing on anomaly detection, segmentation, and feature extraction in complex medical imaging.
+                    </p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-low border border-white/5 rounded-2xl p-8 hover:border-white/10 hover:bg-surface-container transition-all duration-300 space-y-4">
+<h3 class="font-headline-md text-headline-md text-on-surface">Explainable AI</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                        Building transparent systems that provide interpretable rationales for clinical predictions, bridging the trust gap between complex models and healthcare practitioners.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Featured Publications -->
+<section class="max-w-container-max mx-auto px-gutter py-section-gap-mobile md:py-section-gap-desktop" id="publications">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-12">Featured Publications</h2>
+<div class="space-y-6">
+<!-- Publication 1 -->
+<div class="bg-surface-container-low border border-white/5 rounded-2xl p-8 hover:border-white/10 hover:bg-surface-container transition-all duration-300 flex flex-col md:flex-row gap-8 items-start justify-between group">
+<div class="flex-grow space-y-4">
+<div class="flex gap-4 items-center">
+<span class="text-on-surface-variant font-mono text-mono text-xs uppercase tracking-widest">Journal</span>
+<span class="text-on-surface-variant font-mono text-mono text-xs">2023</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">Multimodal Deep Learning for DFU Diagnostics</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">D. Velladurai et al.</p>
+<div class="flex gap-6 pt-2">
+<div class="flex items-center gap-2">
+<span class="font-mono text-mono text-on-surface text-sm">99.37% Accuracy</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-mono text-mono text-on-surface text-sm">0.94 Macro AUC</span>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-3">
+<button class="custom-button-ghost px-4 py-2 rounded-md font-label-md text-label-md text-on-surface">
+                        Paper
+                    </button>
+<button class="custom-button-ghost px-4 py-2 rounded-md font-label-md text-label-md text-on-surface">
+                        Code
+                    </button>
+<button class="custom-button-ghost px-4 py-2 rounded-md font-label-md text-label-md text-on-surface">
+                        DOI
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Blog / Notes Section -->
+<section class="max-w-container-max mx-auto px-gutter py-section-gap-mobile md:py-section-gap-desktop" id="blog">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-12">Notes &amp; Writing</h2>
+<div class="space-y-6">
+<!-- Blog Item 1 -->
+<article class="bg-surface-container-low border border-white/5 rounded-2xl p-8 hover:border-white/10 hover:bg-surface-container transition-all duration-300 group">
+<a class="block space-y-4" href="#">
+<time class="font-mono text-mono text-on-surface-variant text-xs">Oct 24, 2023</time>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">Rethinking Attention Mechanisms in Medical Imaging</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed max-w-3xl">
+                        A critical look at how standard attention models often fail to capture subtle pathological features in high-resolution medical scans, and potential architectural solutions.
+                    </p>
+</a>
+</article>
+<!-- Blog Item 2 -->
+<article class="bg-surface-container-low border border-white/5 rounded-2xl p-8 hover:border-white/10 hover:bg-surface-container transition-all duration-300 group">
+<a class="block space-y-4" href="#">
+<time class="font-mono text-mono text-on-surface-variant text-xs">Aug 12, 2023</time>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">Bridging the Gap: Deploying AI in Clinical Workflows</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed max-w-3xl">
+                        Technical excellence is not enough. Exploring the engineering challenges of integrating complex multimodal inference pipelines into existing hospital IT infrastructure.
+                    </p>
+</a>
+</article>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-background w-full py-section-gap-mobile md:py-12">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto px-gutter gap-6">
+<p class="font-body-sm text-body-sm text-on-surface-variant">© 2026 Daniel Willson Velladurai.</p>
+<div class="flex flex-wrap justify-center gap-x-6 gap-y-4">
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md" href="https://github.com/DanielWill-1" target="_blank" rel="noopener noreferrer">GitHub</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md" href="https://www.linkedin.com/in/daniel-willson-velladurai-76b17024b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md" href="https://scholar.google.com/citations?user=iRLOZa0AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md" href="https://arxiv.org/a/danWill123" target="_blank" rel="noopener noreferrer">arXiv</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md" href="blogs.html">Blog</a>
+</div>
+</div>
+</footer>
+</body></html>
