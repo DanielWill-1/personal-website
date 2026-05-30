@@ -112,6 +112,56 @@
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
+        
+        /* Unified Navigation Design System */
+        .nav-item {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            line-height: 1;
+            letter-spacing: 0.05em;
+            font-weight: 600;
+            font-family: Inter, sans-serif;
+            padding: 10px 14px;
+            border-radius: 6px;
+            background-color: transparent;
+            border: 1px solid transparent;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+        
+        .nav-item-link {
+            color: #a3a8b8;
+        }
+        
+        .nav-item-link:hover {
+            color: #e0e2ea;
+            background-color: rgba(255, 255, 255, 0.04);
+        }
+        
+        .nav-item-subtle {
+            color: #e0e2ea;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+        }
+        
+        .nav-item-subtle:hover {
+            border-color: rgba(255, 255, 255, 0.2);
+            background-color: rgba(255, 255, 255, 0.06);
+        }
+        
+        .nav-item-primary {
+            color: #0B0F14;
+            background-color: #e0e2ea;
+            border: 1px solid #e0e2ea;
+        }
+        
+        .nav-item-primary:hover {
+            background-color: #ffffff;
+            border-color: #ffffff;
+        }
     </style>
 </head>
 <body class="bg-background text-on-background antialiased selection:bg-primary/30 selection:text-primary-fixed">
@@ -123,18 +173,17 @@
                 Daniel Velladurai
             </a>
 <!-- Navigation Links (Desktop) -->
-<div class="hidden md:flex items-center space-x-8">
-<a class="text-on-surface-variant font-body-md text-body-md hover:text-on-surface transition-colors duration-200" href="research.html">Research</a>
-<a class="text-on-surface-variant font-body-md text-body-md hover:text-on-surface transition-colors duration-200" href="publications.html">Publications</a>
-<!-- Active State Applied -->
-<a class="text-primary font-bold text-label-md font-label-md border-b-2 border-primary pb-1" href="blogs.html">Blog</a>
-<a class="text-on-surface-variant font-body-md text-body-md hover:text-on-surface transition-colors duration-200" href="about.html">About</a>
-<a class="text-on-surface-variant font-body-md text-body-md hover:text-on-surface transition-colors duration-200" href="contact.html">Contact</a>
+<div class="hidden md:flex items-center gap-1">
+<a class="nav-item nav-item-link" href="research.html">Research</a>
+<a class="nav-item nav-item-link" href="publications.html">Publications</a>
+<a class="nav-item nav-item-link" href="blogs.html">Blog</a>
+<a class="nav-item nav-item-link" href="about.html">About</a>
+<a class="nav-item nav-item-link" href="contact.html">Contact</a>
 </div>
 <!-- Trailing Action -->
-<div class="hidden md:flex items-center gap-4">
-<a class="px-5 py-2.5 rounded-lg border border-white/10 text-on-surface font-label-md text-label-md hover:bg-white/5 transition-colors duration-200" href="Daniel's Resume.pdf" download>CV</a>
-<a class="px-5 py-2.5 rounded-lg bg-[#4F8CFF] text-white font-label-md text-label-md hover:bg-primary-container transition-colors duration-200" href="contact.html">Get in Touch</a>
+<div class="hidden md:flex items-center gap-1 ml-2">
+<a class="nav-item nav-item-subtle" href="Daniel's Resume.pdf" download>CV</a>
+<a class="nav-item nav-item-primary" href="contact.html">Get in Touch</a>
 </div>
 <!-- Mobile Menu Trigger (Visual Only) -->
 <button class="md:hidden text-on-surface hover:text-primary transition-colors">
@@ -166,19 +215,19 @@
 <article class="group relative grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 p-8 md:p-10 rounded-[24px] bg-surface-container border border-white/5 hover:border-primary/20 hover:bg-surface-container-high transition-all duration-300">
 <!-- Left Column: Meta -->
 <div class="md:col-span-3 flex flex-col gap-4">
-<time class="font-mono text-mono text-on-surface-variant group-hover:text-primary/80 transition-colors">Testing</time>
+<time class="font-mono text-mono text-on-surface-variant group-hover:text-primary/80 transition-colors">May 30, 2026</time>
 <div class="flex flex-wrap gap-2">
-<span class="px-2 py-1 bg-primary-container/10 text-primary-fixed rounded text-body-sm font-label-md uppercase tracking-wider border border-primary-container/20">Sample</span>
+<span class="px-2 py-1 bg-primary-container/10 text-primary-fixed rounded text-body-sm font-label-md uppercase tracking-wider border border-primary-container/20">Machine Learning</span>
 </div>
 </div>
 <!-- Right Column: Content -->
 <div class="md:col-span-9 flex flex-col justify-center">
 <a href="blog1.html" class="block space-y-4">
 <h2 class="font-headline-lg text-headline-lg text-on-surface mb-4 group-hover:text-primary transition-colors">
-                            Testing Lorem Ipsum
+                            What is Machine Learning?
                         </h2>
 <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed max-w-3xl">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            An introduction to how computers learn from data and power the intelligent systems we use every day.
                         </p>
 <div class="mt-6 flex items-center gap-2 text-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 <span class="font-label-md text-label-md">Read Article</span>

@@ -108,26 +108,54 @@
         .custom-card-border { border: 1px solid rgba(255,255,255,0.08); }
         .custom-card-radius { border-radius: 12px; }
         
-        .custom-button-primary { 
-            background-color: #E0E2EA; 
-            color: #0B0F14; 
+        /* Unified Navigation Design System */
+        .nav-item {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            line-height: 1;
+            letter-spacing: 0.05em;
+            font-weight: 600;
+            font-family: Inter, sans-serif;
+            padding: 10px 14px;
+            border-radius: 6px;
+            background-color: transparent;
             border: 1px solid transparent;
-            transition: all 0.3s ease;
-        }
-        .custom-button-primary:hover {
-            background-color: #ffffff;
-            border-color: rgba(255,255,255,0.2);
-            box-shadow: 0 0 20px rgba(224,226,234,0.15);
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            text-decoration: none;
+            white-space: nowrap;
         }
         
-        .custom-button-ghost { 
-            background-color: transparent; 
-            border: 1px solid rgba(255,255,255,0.15); 
-            transition: all 0.3s ease;
+        .nav-item-link {
+            color: #a3a8b8;
         }
-        .custom-button-ghost:hover {
-            background-color: rgba(255,255,255,0.05);
-            border-color: rgba(255,255,255,0.3);
+        
+        .nav-item-link:hover {
+            color: #e0e2ea;
+            background-color: rgba(255, 255, 255, 0.04);
+        }
+        
+        .nav-item-subtle {
+            color: #e0e2ea;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+        }
+        
+        .nav-item-subtle:hover {
+            border-color: rgba(255, 255, 255, 0.2);
+            background-color: rgba(255, 255, 255, 0.06);
+        }
+        
+        .nav-item-primary {
+            color: #0B0F14;
+            background-color: #e0e2ea;
+            border: 1px solid #e0e2ea;
+        }
+        
+        .nav-item-primary:hover {
+            background-color: #ffffff;
+            border-color: #ffffff;
         }
         
         .custom-chip-subtle { 
@@ -141,16 +169,16 @@
 <nav aria-label="Main Navigation" class="bg-background/90 backdrop-blur-md sticky top-0 w-full z-50">
 <div class="flex justify-between items-center max-w-container-max mx-auto px-gutter py-6">
 <a class="font-headline-md text-body-lg font-bold text-on-surface hover:text-white transition-all duration-300" href="index.html">Daniel Velladurai</a>
-<div class="hidden md:flex items-center space-x-8">
-<a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md" href="research.html">Research</a>
-<a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md" href="publications.html">Publications</a>
-<a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md" href="blogs.html">Blog</a>
-<a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md" href="about.html">About</a>
-<a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md" href="contact.html">Contact</a>
+<div class="hidden md:flex items-center gap-1">
+<a class="nav-item nav-item-link" href="research.html">Research</a>
+<a class="nav-item nav-item-link" href="publications.html">Publications</a>
+<a class="nav-item nav-item-link" href="blogs.html">Blog</a>
+<a class="nav-item nav-item-link" href="about.html">About</a>
+<a class="nav-item nav-item-link" href="contact.html">Contact</a>
 </div>
-<div class="hidden md:flex items-center space-x-4">
-<a class="custom-button-ghost px-5 py-2 rounded-md font-label-md text-label-md text-on-surface hover:bg-white/5 transition-colors" href="Daniel's Resume.pdf" download>CV</a>
-<a class="custom-button-primary px-5 py-2 rounded-md font-label-md text-label-md hover:bg-white transition-colors" href="contact.html">Get in Touch</a>
+<div class="hidden md:flex items-center gap-1 ml-2">
+<a class="nav-item nav-item-subtle" href="Daniel's Resume.pdf" download>CV</a>
+<a class="nav-item nav-item-primary" href="contact.html">Get in Touch</a>
 </div>
 <!-- Mobile Menu Button -->
 <button class="md:hidden text-on-surface">
@@ -221,29 +249,32 @@
 <div class="flex-grow space-y-4">
 <div class="flex gap-4 items-center">
 <span class="text-on-surface-variant font-mono text-mono text-xs uppercase tracking-widest">Journal</span>
-<span class="text-on-surface-variant font-mono text-mono text-xs">2023</span>
+<span class="text-on-surface-variant font-mono text-mono text-xs">2025</span>
 </div>
-<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">Multimodal Deep Learning for DFU Diagnostics</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">D. Velladurai et al.</p>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">Hybrid ResNet50–Xception Framework for Diabetic Foot Ulcer Classification</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">D. W. Velladurai, S. Debnath, K. Ramalakshmi, R. Radha</p>
 <div class="flex gap-6 pt-2">
 <div class="flex items-center gap-2">
-<span class="font-mono text-mono text-on-surface text-sm">99.37% Accuracy</span>
+<span class="font-mono text-mono text-on-surface text-sm">99.52% Accuracy</span>
 </div>
 <div class="flex items-center gap-2">
-<span class="font-mono text-mono text-on-surface text-sm">0.94 Macro AUC</span>
+<span class="font-mono text-mono text-on-surface text-sm">100% Recall</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-mono text-mono text-on-surface text-sm">0.9995 AUC</span>
 </div>
 </div>
 </div>
 <div class="flex flex-wrap gap-3">
-<button class="custom-button-ghost px-4 py-2 rounded-md font-label-md text-label-md text-on-surface">
+<a class="custom-button-ghost px-4 py-2 rounded-md font-label-md text-label-md text-on-surface" href="#">
                         Paper
-                    </button>
-<button class="custom-button-ghost px-4 py-2 rounded-md font-label-md text-label-md text-on-surface">
+                    </a>
+<a class="custom-button-ghost px-4 py-2 rounded-md font-label-md text-label-md text-on-surface" href="#">
                         Code
-                    </button>
-<button class="custom-button-ghost px-4 py-2 rounded-md font-label-md text-label-md text-on-surface">
+                    </a>
+<a class="custom-button-ghost px-4 py-2 rounded-md font-label-md text-label-md text-on-surface" href="#">
                         DOI
-                    </button>
+                    </a>
 </div>
 </div>
 </div>
@@ -254,21 +285,11 @@
 <div class="space-y-6">
 <!-- Blog Item 1 -->
 <article class="bg-surface-container-low border border-white/5 rounded-2xl p-8 hover:border-white/10 hover:bg-surface-container transition-all duration-300 group">
-<a class="block space-y-4" href="#">
-<time class="font-mono text-mono text-on-surface-variant text-xs">Oct 24, 2023</time>
-<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">Rethinking Attention Mechanisms in Medical Imaging</h3>
+<a class="block space-y-4" href="blog1.html">
+<time class="font-mono text-mono text-on-surface-variant text-xs">May 30, 2026</time>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">What is Machine Learning?</h3>
 <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed max-w-3xl">
-                        A critical look at how standard attention models often fail to capture subtle pathological features in high-resolution medical scans, and potential architectural solutions.
-                    </p>
-</a>
-</article>
-<!-- Blog Item 2 -->
-<article class="bg-surface-container-low border border-white/5 rounded-2xl p-8 hover:border-white/10 hover:bg-surface-container transition-all duration-300 group">
-<a class="block space-y-4" href="#">
-<time class="font-mono text-mono text-on-surface-variant text-xs">Aug 12, 2023</time>
-<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">Bridging the Gap: Deploying AI in Clinical Workflows</h3>
-<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed max-w-3xl">
-                        Technical excellence is not enough. Exploring the engineering challenges of integrating complex multimodal inference pipelines into existing hospital IT infrastructure.
+                        An introduction to how computers learn from data and power the intelligent systems we use every day.
                     </p>
 </a>
 </article>

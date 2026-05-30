@@ -183,8 +183,57 @@
         .custom-card-bg { background-color: rgba(38, 42, 48, 0.4); }
         .custom-card-border { border: 1px solid rgba(255,255,255,0.06); }
         .custom-card-radius { border-radius: 16px; }
-        .custom-button-primary { background-color: #e0e2ea; color: #101419; }
-        .custom-button-ghost { background-color: transparent; border: 1px solid rgba(255,255,255,0.15); }
+        
+        /* Unified Navigation Design System */
+        .nav-item {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            line-height: 1;
+            letter-spacing: 0.05em;
+            font-weight: 600;
+            font-family: Inter, sans-serif;
+            padding: 10px 14px;
+            border-radius: 6px;
+            background-color: transparent;
+            border: 1px solid transparent;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+        
+        .nav-item-link {
+            color: #a3a8b8;
+        }
+        
+        .nav-item-link:hover {
+            color: #e0e2ea;
+            background-color: rgba(255, 255, 255, 0.04);
+        }
+        
+        .nav-item-subtle {
+            color: #e0e2ea;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+        }
+        
+        .nav-item-subtle:hover {
+            border-color: rgba(255, 255, 255, 0.2);
+            background-color: rgba(255, 255, 255, 0.06);
+        }
+        
+        .nav-item-primary {
+            color: #0B0F14;
+            background-color: #e0e2ea;
+            border: 1px solid #e0e2ea;
+        }
+        
+        .nav-item-primary:hover {
+            background-color: #ffffff;
+            border-color: #ffffff;
+        }
+        
         .custom-chip-subtle { background-color: rgba(255, 255, 255, 0.03); }
     </style>
 </head>
@@ -194,16 +243,16 @@
 <nav aria-label="Main Navigation" class="bg-background/80 backdrop-blur-xl sticky top-0 w-full z-50 border-b border-white/5">
 <div class="flex justify-between items-center max-w-container-max mx-auto px-gutter py-5">
 <a class="font-headline-md text-body-lg font-bold text-on-surface hover:text-white transition-all duration-300 tracking-tight" href="index.html">Daniel Velladurai</a>
-<div class="hidden md:flex items-center space-x-10">
-<a class="text-on-surface-variant hover:text-white transition-colors font-label-md text-label-md" href="research.html">Research</a>
-<a class="text-on-surface-variant hover:text-white transition-colors font-label-md text-label-md" href="publications.html">Publications</a>
-<a class="text-on-surface-variant hover:text-white transition-colors font-label-md text-label-md" href="blogs.html">Blog</a>
-<a class="text-on-surface-variant hover:text-white transition-colors font-label-md text-label-md" href="about.html">About</a>
-<a class="text-on-surface-variant hover:text-white transition-colors font-label-md text-label-md" href="contact.html">Contact</a>
+<div class="hidden md:flex items-center gap-1">
+<a class="nav-item nav-item-link" href="research.html">Research</a>
+<a class="nav-item nav-item-link" href="publications.html">Publications</a>
+<a class="nav-item nav-item-link" href="blogs.html">Blog</a>
+<a class="nav-item nav-item-link" href="about.html">About</a>
+<a class="nav-item nav-item-link" href="contact.html">Contact</a>
 </div>
-<div class="hidden md:flex items-center gap-3">
-<a class="custom-button-ghost px-6 py-2.5 rounded-full font-label-md text-label-md text-on-surface hover:bg-white/5 transition-colors" href="Daniel's Resume.pdf" download>CV</a>
-<a class="bg-[#4F8CFF] text-[#F5F7FA] font-label-md text-label-md px-6 py-2.5 rounded-full hover:bg-primary-container transition-colors" href="contact.html">Get in Touch</a>
+<div class="hidden md:flex items-center gap-1 ml-2">
+<a class="nav-item nav-item-subtle" href="Daniel's Resume.pdf" download>CV</a>
+<a class="nav-item nav-item-primary" href="contact.html">Get in Touch</a>
 </div>
 <!-- Mobile Menu Button -->
 <button class="md:hidden text-on-surface">
@@ -277,26 +326,23 @@
 <div class="absolute top-0 right-0 w-96 h-96 bg-primary/5 blur-[80px] rounded-full pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
 <div class="md:w-5/12 space-y-6 relative z-10">
 <div class="flex gap-4 items-center">
-<span class="text-primary font-mono text-mono text-[11px] uppercase tracking-widest font-bold">Active</span>
+<span class="text-primary font-mono text-mono text-[11px] uppercase tracking-widest font-bold">Journal 2025</span>
 </div>
-<h3 class="font-headline-lg text-headline-lg text-on-surface group-hover:text-primary transition-colors duration-300 tracking-tight">lorem ipsum</h3>
-<div class="p-5 bg-[#0a0e13] custom-card-border rounded-xl mt-8">
-<code class="font-mono text-mono text-on-surface-variant block whitespace-pre text-xs md:text-sm overflow-x-auto leading-loose">import torch
-from testing import testing
-
-)</code>
+<h3 class="font-headline-lg text-headline-lg text-on-surface group-hover:text-primary transition-colors duration-300 tracking-tight">Hybrid ResNet50–Xception Framework for Diabetic Foot Ulcer Classification</h3>
+<div class="flex flex-wrap gap-3 pt-4">
+<span class="bg-[#4F8CFF]/10 text-primary border border-primary/20 px-2.5 py-1 rounded-full font-mono text-mono text-xs">99.52% Accuracy</span>
+<span class="bg-[#8B5CF6]/10 text-[#d0bcff] border border-[#d0bcff]/20 px-2.5 py-1 rounded-full font-mono text-mono text-xs">100% Recall</span>
+<span class="bg-surface-bright text-on-surface-variant border border-white/10 px-2.5 py-1 rounded-full font-mono text-mono text-xs">0.9995 AUC</span>
 </div>
 </div>
 <div class="md:w-7/12 space-y-8 relative z-10 md:pt-14">
 <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-                            This project addresses
+                            A hybrid ResNet50–Xception architecture for automated diabetic foot ulcer classification, achieving 99.52% test accuracy and perfect ulcer detection recall.
                         </p>
-<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-                            The final diagnosis
-                        </p>
-<div class="flex items-center gap-4 pt-8 mt-8 border-t border-white/5">
-<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest text-[11px]">Collaborators:</span>
-<span class="font-body-md text-body-md text-on-surface font-medium"> </span>
+<div class="flex items-center gap-4 pt-8 mt-8 border-t border-white/5 flex-wrap">
+<a class="flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-on-surface font-label-md text-label-md hover:bg-white/10 transition-colors" href="#">Paper</a>
+<a class="flex items-center gap-2 px-4 py-2 bg-transparent text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-colors" href="#">Code</a>
+<a class="flex items-center gap-2 px-4 py-2 bg-transparent text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-colors" href="#">DOI</a>
 </div>
 </div>
 </article>

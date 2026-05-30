@@ -113,6 +113,57 @@
             }
         }
     </script>
+<style>
+        /* Unified Navigation Design System */
+        .nav-item {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            line-height: 1;
+            letter-spacing: 0.05em;
+            font-weight: 600;
+            font-family: Inter, sans-serif;
+            padding: 10px 14px;
+            border-radius: 6px;
+            background-color: transparent;
+            border: 1px solid transparent;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+        
+        .nav-item-link {
+            color: #a3a8b8;
+        }
+        
+        .nav-item-link:hover {
+            color: #e0e2ea;
+            background-color: rgba(255, 255, 255, 0.04);
+        }
+        
+        .nav-item-subtle {
+            color: #e0e2ea;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+        }
+        
+        .nav-item-subtle:hover {
+            border-color: rgba(255, 255, 255, 0.2);
+            background-color: rgba(255, 255, 255, 0.06);
+        }
+        
+        .nav-item-primary {
+            color: #0B0F14;
+            background-color: #e0e2ea;
+            border: 1px solid #e0e2ea;
+        }
+        
+        .nav-item-primary:hover {
+            background-color: #ffffff;
+            border-color: #ffffff;
+        }
+    </style>
 </head>
 <body class="bg-background text-on-surface font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
 <!-- TopNavBar -->
@@ -121,16 +172,16 @@
 <a class="text-headline-md font-headline-md font-bold text-on-surface tracking-tight hover:text-primary transition-colors duration-200 ease-in-out duration-300" href="index.html">
                 Daniel Velladurai
             </a>
-<div class="hidden md:flex items-center gap-8">
-<a class="text-on-surface-variant font-body-md hover:text-on-surface hover:text-primary transition-colors duration-200 ease-in-out duration-300" href="research.html">Research</a>
-<a class="text-primary font-bold border-b-2 border-primary pb-1 transition-colors duration-200 ease-in-out duration-300" href="publications.html">Publications</a>
-<a class="text-on-surface-variant font-body-md hover:text-on-surface hover:text-primary transition-colors duration-200 ease-in-out duration-300" href="blogs.html">Blog</a>
-<a class="text-on-surface-variant font-body-md hover:text-on-surface hover:text-primary transition-colors duration-200 ease-in-out duration-300" href="about.html">About</a>
-<a class="text-on-surface-variant font-body-md hover:text-on-surface hover:text-primary transition-colors duration-200 ease-in-out duration-300" href="contact.html">Contact</a>
+<div class="hidden md:flex items-center gap-1">
+<a class="nav-item nav-item-link" href="research.html">Research</a>
+<a class="nav-item nav-item-link" href="publications.html">Publications</a>
+<a class="nav-item nav-item-link" href="blogs.html">Blog</a>
+<a class="nav-item nav-item-link" href="about.html">About</a>
+<a class="nav-item nav-item-link" href="contact.html">Contact</a>
 </div>
-<div class="hidden md:flex items-center gap-4">
-<a class="px-6 py-2.5 border border-white/10 text-on-surface font-label-md text-label-md rounded-full hover:bg-white/5 transition-colors duration-200" href="Daniel's Resume.pdf" download>CV</a>
-<a class="px-6 py-2.5 bg-[#4F8CFF] text-[#F5F7FA] font-label-md text-label-md rounded-full hover:bg-primary-container transition-colors duration-200 ease-in-out duration-300" href="contact.html">Get in Touch</a>
+<div class="hidden md:flex items-center gap-1 ml-2">
+<a class="nav-item nav-item-subtle" href="Daniel's Resume.pdf" download>CV</a>
+<a class="nav-item nav-item-primary" href="contact.html">Get in Touch</a>
 </div>
 <!-- Mobile Menu Toggle -->
 <button class="md:hidden text-on-surface p-2">
@@ -161,30 +212,30 @@
 <!-- Abstract decorative glow -->
 <div class="absolute -top-24 -right-24 w-48 h-48 bg-primary/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 <div class="flex flex-col md:flex-row justify-between items-start gap-4 mb-4 relative z-10">
-<span class="font-label-md text-label-md text-tertiary uppercase tracking-wider">ICLR 2026 — Oral Presentation</span>
+<span class="font-label-md text-label-md text-tertiary uppercase tracking-wider">JOURNAL 2025</span>
 <div class="flex gap-2 flex-wrap">
-<span class="bg-[#4F8CFF]/10 text-primary border border-primary/20 px-2.5 py-1 rounded-full font-mono text-mono">SOTA: 96.8%</span>
-<span class="bg-[#8B5CF6]/10 text-[#d0bcff] border border-[#d0bcff]/20 px-2.5 py-1 rounded-full font-mono text-mono">15× Efficiency</span>
-<span class="bg-surface-bright text-on-surface-variant border border-white/10 px-2.5 py-1 rounded-full font-mono text-mono">Spotlight</span>
+<span class="bg-[#4F8CFF]/10 text-primary border border-primary/20 px-2.5 py-1 rounded-full font-mono text-mono">99.52% Accuracy</span>
+<span class="bg-[#8B5CF6]/10 text-[#d0bcff] border border-[#d0bcff]/20 px-2.5 py-1 rounded-full font-mono text-mono">100% Recall</span>
+<span class="bg-surface-bright text-on-surface-variant border border-white/10 px-2.5 py-1 rounded-full font-mono text-mono">0.9995 AUC</span>
 </div>
 </div>
 <h3 class="font-headline-md text-headline-md text-on-surface mb-3 group-hover:text-primary transition-colors relative z-10">
-                            Recursive Self-Refinement via Differentiable Neural Memory for Compositional Reasoning in Large Language Models
+                            Hybrid ResNet50–Xception Framework for Diabetic Foot Ulcer Classification
                         </h3>
 <p class="font-body-md text-body-md text-on-surface-variant mb-4 relative z-10">
-                            Daniel Velladurai, Marcus Thorne, Sarah Chen, Elena Rostova
+                            D. W. Velladurai, S. Debnath, K. Ramalakshmi, R. Radha
                         </p>
 <p class="font-body-md text-body-md text-on-surface-variant/70 mb-8 relative z-10 leading-relaxed">
-                            We introduce a novel recursive self-refinement framework that augments transformer-based architectures with a differentiable neural memory module, enabling compositional reasoning over long-horizon planning tasks. Our approach achieves state-of-the-art performance on the GSM8K-Hard and MATH-500 benchmarks while reducing computational overhead by an order of magnitude compared to chain-of-thought baselines. Extensive ablation studies across five reasoning domains demonstrate robust generalization to out-of-distribution inputs and emergent meta-cognitive behavior in few-shot regimes.
+                            A hybrid ResNet50–Xception architecture for automated diabetic foot ulcer classification, achieving 99.52% test accuracy and perfect ulcer detection recall.
                         </p>
 <div class="flex flex-wrap items-center gap-4 relative z-10">
 <a class="flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-on-surface font-label-md text-label-md hover:bg-white/10 transition-colors" href="#">
 <span class="material-symbols-outlined text-lg" data-icon="description">description</span>
-                                Paper (PDF)
+                                Paper
                             </a>
 <a class="flex items-center gap-2 px-4 py-2 bg-transparent text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-colors" href="#">
 <span class="material-symbols-outlined text-lg" data-icon="code">code</span>
-                                GitHub Repo
+                                Code
                             </a>
 <a class="flex items-center gap-2 px-4 py-2 bg-transparent text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-colors" href="#">
 <span class="material-symbols-outlined text-lg" data-icon="link">link</span>
