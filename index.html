@@ -220,32 +220,113 @@
   </div>
 </section>
 
-<!-- Selected Projects -->
+<!-- Featured Research -->
 <section id="projects" class="py-24 md:py-32 px-6 border-t border-border">
   <div class="max-w-content mx-auto">
     <div class="flex items-center gap-4 mb-16">
       <div class="h-px w-8 bg-accent/40"></div>
-      <p class="text-text-muted text-sm font-medium tracking-widest uppercase">Selected Projects</p>
+      <p class="text-text-muted text-sm font-medium tracking-widest uppercase">Featured Research</p>
     </div>
-    <div class="bg-bg-card border border-border rounded-2xl p-8 md:p-12 flex flex-col md:flex-row gap-8 md:gap-16 items-start group hover:border-border-hover transition-all duration-300 fade-up">
-      <div class="md:w-5/12 space-y-4">
-        <span class="text-accent text-xs font-medium tracking-widest uppercase">Journal · 2025</span>
-        <h3 class="font-heading text-2xl font-semibold leading-tight group-hover:text-accent transition-colors duration-300">Hybrid ResNet50–Xception Framework for Diabetic Foot Ulcer Classification</h3>
-        <div class="flex flex-wrap gap-2 pt-2">
-          <span class="px-2.5 py-1 text-xs font-medium bg-accent/10 text-accent border border-accent/20 rounded-full">99.52% Accuracy</span>
-          <span class="px-2.5 py-1 text-xs font-medium bg-violet-500/10 text-violet-300 border border-violet-500/20 rounded-full">100% Recall</span>
-          <span class="px-2.5 py-1 text-xs font-medium text-text-secondary border border-border rounded-full">0.9995 AUC</span>
+    <div class="space-y-8">
+
+      <!-- Featured #1: Nature Scientific Reports -->
+      <article class="bg-bg-card border border-border rounded-2xl p-8 md:p-12 flex flex-col md:flex-row gap-8 md:gap-16 items-start group hover:border-border-hover transition-all duration-300 fade-up">
+        <div class="md:w-5/12 space-y-5">
+          <div class="flex items-center gap-3">
+            <span class="text-accent text-xs font-medium tracking-widest uppercase">Journal Article · 2026</span>
+            <span class="px-2 py-0.5 text-[11px] font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full uppercase tracking-wider">Published</span>
+          </div>
+          <h3 class="font-heading text-2xl font-semibold leading-tight group-hover:text-accent transition-colors duration-300">An AI-driven Framework for Diabetic Foot Ulcer Classification, Segmentation, and Depth Estimation</h3>
+          <p class="text-text-muted text-xs tracking-wider uppercase">Scientific Reports (Nature Portfolio)</p>
+          <div class="flex flex-wrap gap-2 pt-1">
+            <span class="px-2.5 py-1 text-[11px] font-medium bg-accent/10 text-accent border border-accent/20 rounded-full">Binary Classification</span>
+            <span class="px-2.5 py-1 text-[11px] font-medium bg-accent/10 text-accent border border-accent/20 rounded-full">Semantic Segmentation</span>
+            <span class="px-2.5 py-1 text-[11px] font-medium bg-violet-500/10 text-violet-300 border border-violet-500/20 rounded-full">Depth Estimation</span>
+            <span class="px-2.5 py-1 text-[11px] font-medium bg-teal-500/8 text-teal-300 border border-teal-500/20 rounded-full">Explainable AI</span>
+            <span class="px-2.5 py-1 text-[11px] font-medium bg-amber-500/10 text-amber-400 border border-amber-500/20 rounded-full">Clinical Report Generation</span>
+          </div>
         </div>
-      </div>
-      <div class="md:w-7/12 space-y-6 md:pt-12">
-        <p class="text-text-secondary leading-relaxed">A hybrid ResNet50–Xception architecture for automated diabetic foot ulcer classification, achieving 99.52% test accuracy and perfect ulcer detection recall on clinical wound datasets.</p>
-        <p class="text-text-muted text-sm">D. W. Velladurai, S. Debnath, K. Ramalakshmi, R. Radha</p>
-        <div class="flex flex-wrap items-center gap-3 pt-4 border-t border-border">
-          <a href="#" class="px-4 py-2 text-sm font-medium bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-colors">Paper</a>
-          <a href="#" class="px-4 py-2 text-sm font-medium text-text-secondary hover:text-text-primary transition-colors">Code</a>
-          <a href="#" class="px-4 py-2 text-sm font-medium text-text-secondary hover:text-text-primary transition-colors">DOI</a>
+        <div class="md:w-7/12 space-y-6 md:pt-10">
+          <p class="text-text-secondary leading-relaxed">An end-to-end explainable AI framework for automated diabetic foot ulcer assessment integrating binary classification, semantic segmentation, monocular depth estimation, Grad-CAM &amp; LIME explainability, and automated clinical report generation within a unified diagnostic pipeline.</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 text-xs font-medium bg-accent/10 text-accent border border-accent/20 rounded-full">EfficientNet-B0</span>
+            <span class="px-2.5 py-1 text-xs font-medium bg-violet-500/10 text-violet-300 border border-violet-500/20 rounded-full">U-Net</span>
+            <span class="px-2.5 py-1 text-xs font-medium bg-teal-500/8 text-teal-300 border border-teal-500/20 rounded-full">MiDaS</span>
+            <span class="px-2.5 py-1 text-xs font-medium text-text-secondary border border-border rounded-full">Grad-CAM</span>
+            <span class="px-2.5 py-1 text-xs font-medium text-text-secondary border border-border rounded-full">LIME</span>
+          </div>
+          <p class="text-text-muted text-sm">D. W. Velladurai et al.</p>
+          <div class="flex flex-wrap items-center gap-3 pt-4 border-t border-border">
+            <a href="#" class="px-4 py-2 text-sm font-medium bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-colors">Paper</a>
+            <a href="https://doi.org/10.1038/s41598-026-52864-2" target="_blank" rel="noopener noreferrer" class="px-4 py-2 text-sm font-medium text-text-secondary hover:text-text-primary transition-colors">DOI</a>
+            <a href="#" class="px-4 py-2 text-sm font-medium text-text-secondary hover:text-text-primary transition-colors">PDF</a>
+          </div>
         </div>
-      </div>
+      </article>
+
+      <!-- Featured #2: CVR 2026 -->
+      <article class="bg-bg-card border border-border rounded-2xl p-8 md:p-12 flex flex-col md:flex-row gap-8 md:gap-16 items-start group hover:border-border-hover transition-all duration-300 fade-up stagger-1">
+        <div class="md:w-5/12 space-y-5">
+          <div class="flex items-center gap-3">
+            <span class="text-accent text-xs font-medium tracking-widest uppercase">Conference · 2026</span>
+            <span class="px-2 py-0.5 text-[11px] font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full uppercase tracking-wider">Accepted</span>
+          </div>
+          <h3 class="font-heading text-2xl font-semibold leading-tight group-hover:text-accent transition-colors duration-300">Dual-Stream Hybrid Vision Transformers for Multi-Modal Diabetic Retinopathy Staging and DME Detection</h3>
+          <p class="text-text-muted text-xs tracking-wider uppercase">CVR 2026</p>
+          <div class="flex flex-wrap gap-2 pt-1">
+            <span class="px-2.5 py-1 text-[11px] font-medium bg-accent/10 text-accent border border-accent/20 rounded-full">MaxViT</span>
+            <span class="px-2.5 py-1 text-[11px] font-medium bg-accent/10 text-accent border border-accent/20 rounded-full">Fundus + OCT</span>
+            <span class="px-2.5 py-1 text-[11px] font-medium bg-violet-500/10 text-violet-300 border border-violet-500/20 rounded-full">Dual Stream</span>
+            <span class="px-2.5 py-1 text-[11px] font-medium bg-teal-500/8 text-teal-300 border border-teal-500/20 rounded-full">DR Staging</span>
+            <span class="px-2.5 py-1 text-[11px] font-medium bg-amber-500/10 text-amber-400 border border-amber-500/20 rounded-full">DME Detection</span>
+            <span class="px-2.5 py-1 text-[11px] font-medium text-text-secondary border border-border rounded-full">Multi-Modal AI</span>
+          </div>
+        </div>
+        <div class="md:w-7/12 space-y-6 md:pt-10">
+          <p class="text-text-secondary leading-relaxed">A dual-stream Hybrid Vision Transformer architecture based on MaxViT for multimodal retinal disease analysis using Fundus and OCT images to simultaneously perform diabetic retinopathy staging and diabetic macular edema detection without requiring paired datasets.</p>
+          <p class="text-text-muted text-sm">D. W. Velladurai et al.</p>
+          <div class="flex flex-wrap items-center gap-3 pt-4 border-t border-border">
+            <a href="#" class="px-4 py-2 text-sm font-medium bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-colors">Paper</a>
+            <a href="#" class="px-4 py-2 text-sm font-medium text-text-secondary hover:text-text-primary transition-colors">Slides</a>
+            <a href="#" class="px-4 py-2 text-sm font-medium text-text-secondary hover:text-text-primary transition-colors">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Featured #3: TinyViT-ProtoNet -->
+      <article class="bg-bg-card border border-border rounded-2xl p-8 md:p-12 flex flex-col md:flex-row gap-8 md:gap-16 items-start group hover:border-border-hover transition-all duration-300 fade-up stagger-2">
+        <div class="md:w-5/12 space-y-5">
+          <div class="flex items-center gap-3">
+            <span class="text-accent text-xs font-medium tracking-widest uppercase">Journal Article · 2026</span>
+            <span class="px-2 py-0.5 text-[11px] font-medium bg-amber-500/10 text-amber-400 border border-amber-500/20 rounded-full uppercase tracking-wider">Under Peer Review</span>
+          </div>
+          <h3 class="font-heading text-2xl font-semibold leading-tight group-hover:text-accent transition-colors duration-300">TinyViT-ProtoNet: A Few-Shot Learning Framework for Robust Surface Defect Detection in Metal Manufacturing</h3>
+          <p class="text-text-muted text-xs tracking-wider uppercase">Engineering Applications of Artificial Intelligence</p>
+          <div class="flex flex-wrap gap-2 pt-1">
+            <span class="px-2.5 py-1 text-xs font-medium bg-accent/10 text-accent border border-accent/20 rounded-full">99.79% Accuracy</span>
+            <span class="px-2.5 py-1 text-xs font-medium bg-violet-500/10 text-violet-300 border border-violet-500/20 rounded-full">Few-Shot Learning</span>
+            <span class="px-2.5 py-1 text-xs font-medium bg-teal-500/8 text-teal-300 border border-teal-500/20 rounded-full">Sequential Split</span>
+            <span class="px-2.5 py-1 text-xs font-medium bg-amber-500/10 text-amber-400 border border-amber-500/20 rounded-full">Cross-Dataset Validation</span>
+          </div>
+        </div>
+        <div class="md:w-7/12 space-y-6 md:pt-10">
+          <p class="text-text-secondary leading-relaxed">A hybrid Tiny Vision Transformer and Prototypical Network architecture for industrial few-shot surface defect detection under strict non-leaky evaluation protocols with extensive cross-dataset validation on GC10, Severstal, and DAGM2007.</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 text-xs font-medium bg-accent/10 text-accent border border-accent/20 rounded-full">TinyViT</span>
+            <span class="px-2.5 py-1 text-xs font-medium bg-violet-500/10 text-violet-300 border border-violet-500/20 rounded-full">Prototypical Networks</span>
+            <span class="px-2.5 py-1 text-xs font-medium text-text-secondary border border-border rounded-full">GC10</span>
+            <span class="px-2.5 py-1 text-xs font-medium text-text-secondary border border-border rounded-full">Severstal</span>
+            <span class="px-2.5 py-1 text-xs font-medium text-text-secondary border border-border rounded-full">DAGM2007</span>
+          </div>
+          <p class="text-text-muted text-sm">D. W. Velladurai et al.</p>
+          <div class="flex flex-wrap items-center gap-3 pt-4 border-t border-border">
+            <a href="#" class="px-4 py-2 text-sm font-medium bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-colors">Paper</a>
+            <a href="#" class="px-4 py-2 text-sm font-medium text-text-secondary hover:text-text-primary transition-colors">Manuscript</a>
+            <a href="#" class="px-4 py-2 text-sm font-medium text-text-secondary hover:text-text-primary transition-colors">Code</a>
+          </div>
+        </div>
+      </article>
+
     </div>
   </div>
 </section>
@@ -258,91 +339,104 @@
       <p class="text-text-muted text-sm font-medium tracking-widest uppercase">Publications</p>
     </div>
 
-    <!-- Conference Papers -->
-    <div class="mb-16">
-      <h3 class="font-heading text-xs font-semibold text-text-muted uppercase tracking-widest mb-8 pb-3 border-b border-border">Conference Papers</h3>
-      <div class="space-y-6">
-        <article class="bg-bg-card border border-border rounded-2xl p-8 hover:border-border-hover transition-all duration-300 fade-up">
-          <div class="flex items-center gap-3 mb-3">
-            <span class="text-accent text-xs font-medium tracking-widest uppercase">Conference · 2025</span>
-          </div>
-          <h4 class="font-heading text-lg font-semibold mb-2 hover:text-accent transition-colors duration-200">Hybrid ResNet50–Xception for Diabetic Foot Ulcer Classification</h4>
-          <p class="text-text-muted text-sm">D. W. Velladurai, S. Debnath, K. Ramalakshmi, R. Radha</p>
-        </article>
-        <article class="bg-bg-card border border-border rounded-2xl p-8 hover:border-border-hover transition-all duration-300 fade-up stagger-1">
-          <div class="flex items-center gap-3 mb-3">
-            <span class="text-accent text-xs font-medium tracking-widest uppercase">Conference</span>
-          </div>
-          <h4 class="font-heading text-lg font-semibold mb-2 hover:text-accent transition-colors duration-200">Gesture-to-Speech Analysis</h4>
-          <p class="text-text-muted text-sm">D. W. Velladurai et al.</p>
-        </article>
-        <article class="bg-bg-card border border-border rounded-2xl p-8 hover:border-border-hover transition-all duration-300 fade-up stagger-2">
-          <div class="flex items-center gap-3 mb-3">
-            <span class="text-accent text-xs font-medium tracking-widest uppercase">Conference</span>
-          </div>
-          <h4 class="font-heading text-lg font-semibold mb-2 hover:text-accent transition-colors duration-200">Multimodal Fusion of Fundus Images and OCT using Hybrid Vision Transformers</h4>
-          <p class="text-text-muted text-sm">D. W. Velladurai et al.</p>
-        </article>
-      </div>
-    </div>
+    <div class="space-y-6">
 
-    <!-- Journal Papers -->
-    <div class="mb-16">
-      <h3 class="font-heading text-xs font-semibold text-text-muted uppercase tracking-widest mb-8 pb-3 border-b border-border">Journal Papers</h3>
-      <div class="space-y-6">
-        <article class="bg-bg-card border border-border rounded-2xl p-8 hover:border-border-hover transition-all duration-300 fade-up">
-          <div class="flex items-center gap-3 mb-3">
-            <span class="text-accent text-xs font-medium tracking-widest uppercase">Journal</span>
-          </div>
-          <h4 class="font-heading text-lg font-semibold mb-2 hover:text-accent transition-colors duration-200">An AI-driven Framework for Diabetic Foot Ulcer Classification, Segmentation, and Depth Estimation</h4>
-          <p class="text-text-muted text-sm">D. W. Velladurai et al.</p>
-        </article>
-        <article class="bg-bg-card border border-border rounded-2xl p-8 hover:border-border-hover transition-all duration-300 fade-up stagger-1">
-          <div class="flex items-center gap-3 mb-3">
-            <span class="text-accent text-xs font-medium tracking-widest uppercase">Journal</span>
-          </div>
-          <h4 class="font-heading text-lg font-semibold mb-2 hover:text-accent transition-colors duration-200">TinyViT-ProtoNet: A Few-Shot Learning Framework for Robust Surface Defect Detection in Metal Manufacturing</h4>
-          <p class="text-text-muted text-sm">D. W. Velladurai et al.</p>
-        </article>
-        <article class="bg-bg-card border border-border rounded-2xl p-8 hover:border-border-hover transition-all duration-300 fade-up stagger-2">
-          <div class="flex items-center gap-3 mb-3">
-            <span class="text-accent text-xs font-medium tracking-widest uppercase">Journal</span>
-          </div>
-          <h4 class="font-heading text-lg font-semibold mb-2 hover:text-accent transition-colors duration-200">Hybrid Mamba and UNet++ Framework for Robust Diabetic Foot Ulcer Segmentation</h4>
-          <p class="text-text-muted text-sm">D. W. Velladurai et al.</p>
-        </article>
-      </div>
-    </div>
-
-    <!-- Under Preparation -->
-    <div class="mb-16">
-      <h3 class="font-heading text-xs font-semibold text-text-muted uppercase tracking-widest mb-8 pb-3 border-b border-border">Under Preparation</h3>
+      <!-- Nature -->
       <article class="bg-bg-card border border-border rounded-2xl p-8 hover:border-border-hover transition-all duration-300 fade-up">
         <div class="flex items-center gap-3 mb-3">
-          <span class="px-2 py-0.5 text-[11px] font-medium bg-amber-500/10 text-amber-400 border border-amber-500/20 rounded-full uppercase tracking-wider">In Progress</span>
+          <span class="text-accent text-xs font-medium tracking-widest uppercase">Scientific Reports (Nature Portfolio) · 2026</span>
+          <span class="px-2 py-0.5 text-[11px] font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full uppercase tracking-wider">Published</span>
         </div>
-        <h4 class="font-heading text-lg font-semibold mb-2 hover:text-accent transition-colors duration-200">Diabetic Foot Ulcers: Classification, Segmentation, and Depth Estimation (Multi-class)</h4>
+        <h4 class="font-heading text-lg font-semibold mb-2 hover:text-accent transition-colors duration-200">An AI-driven Framework for Diabetic Foot Ulcer Classification, Segmentation, and Depth Estimation</h4>
+        <p class="text-text-muted text-sm">D. W. Velladurai et al.</p>
+        <div class="flex flex-wrap items-center gap-3 mt-4 pt-4 border-t border-border">
+          <a href="#" class="px-3 py-1.5 text-xs font-medium bg-white/5 border border-border rounded-lg hover:bg-white/10 transition-colors">Paper</a>
+          <a href="https://doi.org/10.1038/s41598-026-52864-2" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 text-xs font-medium text-text-secondary hover:text-text-primary transition-colors">DOI</a>
+        </div>
+      </article>
+
+      <!-- TinyViT-ProtoNet -->
+      <article class="bg-bg-card border border-border rounded-2xl p-8 hover:border-border-hover transition-all duration-300 fade-up stagger-1">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="text-accent text-xs font-medium tracking-widest uppercase">Engineering Applications of Artificial Intelligence · 2026</span>
+          <span class="px-2 py-0.5 text-[11px] font-medium bg-amber-500/10 text-amber-400 border border-amber-500/20 rounded-full uppercase tracking-wider">Under Peer Review</span>
+        </div>
+        <h4 class="font-heading text-lg font-semibold mb-2 hover:text-accent transition-colors duration-200">TinyViT-ProtoNet: A Few-Shot Learning Framework for Robust Surface Defect Detection in Metal Manufacturing</h4>
         <p class="text-text-muted text-sm">D. W. Velladurai et al.</p>
       </article>
-    </div>
 
-    <!-- Upcoming -->
-    <div>
-      <h3 class="font-heading text-xs font-semibold text-text-muted uppercase tracking-widest mb-8 pb-3 border-b border-border">Upcoming</h3>
-      <div class="space-y-4">
-        <div class="bg-bg-card border border-border rounded-2xl p-8 border-dashed opacity-60 hover:opacity-80 transition-opacity duration-300 fade-up">
-          <div class="flex items-center gap-3 mb-3">
-            <span class="px-2 py-0.5 text-[11px] font-medium text-text-muted border border-border rounded-full uppercase tracking-wider">Coming Soon</span>
-          </div>
-          <h4 class="font-heading text-lg font-semibold text-text-muted">Upcoming Journal Paper</h4>
+      <!-- Mamba + UNet++ -->
+      <article class="bg-bg-card border border-border rounded-2xl p-8 hover:border-border-hover transition-all duration-300 fade-up stagger-2">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="text-accent text-xs font-medium tracking-widest uppercase">Signals, Image and Video Processing</span>
+          <span class="px-2 py-0.5 text-[11px] font-medium bg-violet-500/10 text-violet-300 border border-violet-500/20 rounded-full uppercase tracking-wider">Upcoming Submission</span>
         </div>
-        <div class="bg-bg-card border border-border rounded-2xl p-8 border-dashed opacity-60 hover:opacity-80 transition-opacity duration-300 fade-up stagger-1">
-          <div class="flex items-center gap-3 mb-3">
-            <span class="px-2 py-0.5 text-[11px] font-medium text-text-muted border border-border rounded-full uppercase tracking-wider">Coming Soon</span>
-          </div>
-          <h4 class="font-heading text-lg font-semibold text-text-muted">Upcoming Journal Paper</h4>
+        <h4 class="font-heading text-lg font-semibold mb-2 hover:text-accent transition-colors duration-200">Hybrid Mamba and UNet++ Framework for Robust Diabetic Foot Ulcer Segmentation</h4>
+        <p class="text-text-muted text-sm">D. W. Velladurai et al.</p>
+      </article>
+
+      <!-- CVR 2026 -->
+      <article class="bg-bg-card border border-border rounded-2xl p-8 hover:border-border-hover transition-all duration-300 fade-up stagger-3">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="text-accent text-xs font-medium tracking-widest uppercase">CVR 2026</span>
+          <span class="px-2 py-0.5 text-[11px] font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full uppercase tracking-wider">Accepted</span>
         </div>
-      </div>
+        <h4 class="font-heading text-lg font-semibold mb-2 hover:text-accent transition-colors duration-200">Dual-Stream Hybrid Vision Transformers for Multi-Modal Diabetic Retinopathy Staging and DME Detection</h4>
+        <p class="text-text-muted text-sm">D. W. Velladurai et al.</p>
+      </article>
+
+      <!-- AICTA 2025 -->
+      <article class="bg-bg-card border border-border rounded-2xl p-8 hover:border-border-hover transition-all duration-300 fade-up stagger-4">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="text-accent text-xs font-medium tracking-widest uppercase">AICTA 2025</span>
+          <span class="px-2 py-0.5 text-[11px] font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full uppercase tracking-wider">Published</span>
+        </div>
+        <h4 class="font-heading text-lg font-semibold mb-2 hover:text-accent transition-colors duration-200">Hybrid ResNet50–Xception Framework for Diabetic Foot Ulcer Classification</h4>
+        <p class="text-text-muted text-sm">D. W. Velladurai, S. Debnath, K. Ramalakshmi, R. Radha</p>
+      </article>
+
+      <!-- MiND 2025 -->
+      <article class="bg-bg-card border border-border rounded-2xl p-8 hover:border-border-hover transition-all duration-300 fade-up">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="text-accent text-xs font-medium tracking-widest uppercase">MiND 2025</span>
+          <span class="px-2 py-0.5 text-[11px] font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full uppercase tracking-wider">Published</span>
+        </div>
+        <h4 class="font-heading text-lg font-semibold mb-2 hover:text-accent transition-colors duration-200">Gesture to Speech for Regional Language</h4>
+        <p class="text-text-secondary text-sm mb-2">Real-time gesture recognition system for regional language speech synthesis using CNNs, OpenCV, and multilingual text-to-speech.</p>
+        <p class="text-text-muted text-sm">D. W. Velladurai et al.</p>
+      </article>
+
+      <!-- In Preparation -->
+      <article class="bg-bg-card border border-border rounded-2xl p-8 hover:border-border-hover transition-all duration-300 fade-up">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="text-accent text-xs font-medium tracking-widest uppercase">2025</span>
+          <span class="px-2 py-0.5 text-[11px] font-medium bg-violet-500/10 text-violet-300 border border-violet-500/20 rounded-full uppercase tracking-wider">In Preparation</span>
+        </div>
+        <h4 class="font-heading text-lg font-semibold mb-2 hover:text-accent transition-colors duration-200">A Hybrid Deep Learning Framework for Multi-Class Diabetic Foot Ulcer Classification</h4>
+        <p class="text-text-secondary text-sm mb-2">Multi-class diabetic foot ulcer classification using a hybrid EfficientNetB3 and Transformer architecture integrated into a complete CAD pipeline.</p>
+        <p class="text-text-muted text-sm">D. W. Velladurai et al.</p>
+      </article>
+
+      <!-- Skin Cancer -->
+      <article class="bg-bg-card border border-border rounded-2xl p-8 hover:border-border-hover transition-all duration-300 fade-up">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="text-accent text-xs font-medium tracking-widest uppercase">AICTA 2026</span>
+          <span class="px-2 py-0.5 text-[11px] font-medium text-text-muted border border-border rounded-full uppercase tracking-wider">Coming Soon</span>
+        </div>
+        <h4 class="font-heading text-lg font-semibold mb-2 hover:text-accent transition-colors duration-200">A Deep Learning Framework for Skin Cancer Segmentation and Multi-Class Classification</h4>
+        <p class="text-text-muted text-sm">D. W. Velladurai et al.</p>
+      </article>
+
+      <!-- Iris-Fingerprint -->
+      <article class="bg-bg-card border border-border rounded-2xl p-8 hover:border-border-hover transition-all duration-300 fade-up">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="text-accent text-xs font-medium tracking-widest uppercase">AICTA 2026</span>
+          <span class="px-2 py-0.5 text-[11px] font-medium text-text-muted border border-border rounded-full uppercase tracking-wider">Coming Soon</span>
+        </div>
+        <h4 class="font-heading text-lg font-semibold mb-2 hover:text-accent transition-colors duration-200">Iris–Fingerprint Based Biometric Authentication using Adaptive Feature-Level Fusion</h4>
+        <p class="text-text-muted text-sm">D. W. Velladurai et al.</p>
+      </article>
+
     </div>
   </div>
 </section>
