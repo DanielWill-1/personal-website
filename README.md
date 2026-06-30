@@ -1,23 +1,15 @@
-# Daniel Velladurai — Personal Website
+# Daniel Willson Velladurai — Personal Website
 
-A static personal portfolio and academic website built with HTML, Tailwind CSS (CDN), and Material Symbols. Designed with a polished dark theme and responsive layout across all devices.
+A premium single-page research portfolio built with HTML and Tailwind CSS (CDN). Dark mode, editorial typography, calm blue accent — designed to feel like a modern AI research lab homepage.
 
 ## Project Structure
 
 ```
 personal-website/
-├── new/                          # Main website pages
-│   ├── index.html                # Landing / home page
-│   ├── about.html                # Bio, education, skills, technical stack
-│   ├── research.html             # Research focus areas & current projects
-│   ├── publications.html         # Publication timeline with paper cards
-│   ├── blogs.html                # Blog listing page
-│   ├── blog1.html                # Individual blog post
-│   ├── contact.html              # Contact page with email & social links
-│   └── Daniel's Resume.pdf       # Downloadable CV
-├── index.html                    # Root redirect/entry point
-├── blog-post-1.html              # Additional blog post
-├── blog-post-2.html              # Additional blog post
+├── index.html              # Single-page portfolio (hero, research, about, projects, publications, timeline, skills, writing, contact)
+├── blogs.html              # Blog listing page
+├── blog1.html              # Individual blog post
+├── Daniel's Resume.pdf     # Downloadable CV
 ├── .gitignore
 ├── .gitattributes
 ├── LICENSE
@@ -26,60 +18,46 @@ personal-website/
 
 ## Tech Stack
 
-- **HTML5** — semantic, accessible markup
-- **Tailwind CSS** — utility-first CSS via CDN (`https://cdn.tailwindcss.com`)
-- **Material Symbols** — Google's icon font via CDN
-- **Google Fonts** — Inter (body) and Space Grotesk (headings)
+- **HTML5** — semantic markup
+- **Tailwind CSS** — utility-first CSS via CDN
+- **Google Fonts** — Inter (body) + Space Grotesk (headings)
+- **Intersection Observer** — subtle fade-up animations on scroll
 
-No build step, no dependencies, no JavaScript frameworks — just open the HTML files in a browser.
+No build step, no JavaScript frameworks.
 
-## Tailwind Configuration
+## Design System
 
-The project defines a custom design system via `tailwind.config` inline in each page, including:
+- **Background**: `#121417` (charcoal, not black)
+- **Accent**: `#4f8cff` (calm blue)
+- **Cards**: `#1a1f2b` with `rgba(255,255,255,0.07)` borders
+- **Max width**: 1200px, generous whitespace
+- **Animations**: fade-up only, 400ms
 
-- **Colors** — full Material You-inspired palette (surface, primary, secondary, tertiary variants)
-- **Typography** — responsive type scale from `body-sm` to `display-lg` with custom letter-spacing and line heights
-- **Spacing** — mobile gutter (`20px`), desktop gutter (`24px`), section gaps, container max-width (`1200px`)
-- **Border radius** — consistent rounded corners (`DEFAULT: 0.25rem`, `lg: 0.5rem`, `xl: 0.75rem`, `full: 9999px`)
+## Sections
 
-## Pages
-
-### Home (`index.html`)
-Hero section with name, title, and a brief tagline introducing the research focus.
-
-### Research (`research.html`)
-- Hero header with "Advancing Clinical Intelligence through Precision AI" tagline
-- Three focus area cards (Medical AI, Computer Vision, Explainable AI) with tag chips
-- Single featured project (Neuro-Symbolic Pathway Analysis) with code block, collaborators section, and hover glow effect
-
-### Publications (`publications.html`)
-- Chronological timeline layout with year headers
-- Publication cards with venue badges, performance tags (e.g., SOTA: 96.8%), author lists, abstracts, and action links (PDF, GitHub, DOI)
-- Currently features a single 2026 ICLR Oral Presentation publication
-
-### About (`about.html`)
-- Bio section with professional narrative
-- Education card (B.Tech in Computer Science, Alliance University, 2022–2026)
-- Core focus areas in a bento grid
-- Technical Arsenal: ML frameworks, programming languages, and infrastructure tools displayed as chip-style tags
-
-### Blog (`blogs.html`)
-Blog post listing page with cards linking to individual posts.
-
-### Contact (`contact.html`)
-Minimalist contact page centered around the email address with hover reveal arrow icon, plus social links (GitHub, LinkedIn, Google Scholar).
+| Section | Description |
+|---------|-------------|
+| Hero | Name, title, mission, CTAs, credibility metrics |
+| Research | Three focus area cards (Medical AI, Computer Vision, Explainable AI) |
+| About | Professional bio + focus areas sidebar |
+| Projects | Featured paper with metrics |
+| Publications | 3 conference papers, 3 journal papers, 1 in prep, 2 upcoming |
+| Timeline | Education (B.Tech CSE AI & ML, Alliance University 2022–2026) |
+| Skills | ML frameworks, languages, infrastructure (grouped by domain) |
+| Writing | Blog preview linking to full posts |
+| Contact | Email + social links |
 
 ## Getting Started
 
-Clone the repository and open any HTML file directly in your browser — no server required.
+Open `index.html` directly in a browser — no server required.
 
 ```bash
 git clone https://github.com/DanielWill-1/personal-website.git
 cd personal-website
-# Open new/index.html in your browser
+# Open index.html
 ```
 
-For local development with live reload, you can use any static server:
+For local development with live reload:
 
 ```bash
 npx serve .
@@ -87,8 +65,4 @@ npx serve .
 
 ## License
 
-This project is open source. See [LICENSE](LICENSE) for details.
-
----
-
-**© 2024 Daniel Velladurai**
+See [LICENSE](LICENSE).
